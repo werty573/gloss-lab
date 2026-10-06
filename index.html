@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gloss Lab | Mobile detailing & ceramic coating, Central Trinidad</title>
+<meta name="description" content="Mobile car detailing and ceramic coating across Central Trinidad. Concept site by Portside Digital.">
+<meta property="og:title" content="Gloss Lab">
+<meta property="og:image" content="img/darkcar.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+</head>
+<body>
+<header class="nav">
+  <a href="#top" class="brand" aria-label="Gloss Lab home"><span class="mark" aria-hidden="true"></span>GLOSS LAB</a>
+  <nav aria-label="Primary"><a href="#results">Results</a><a href="#process">Process</a><a href="#packages">Packages</a></nav>
+  <a href="#book" class="btn btn-lime">Book a detail</a>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-bg"><img src="img/darkcar.jpg" alt="A dark car in a garage, headlights on, lit by overhead strip lights" width="1800" height="1200"></div>
+    <div class="hero-copy">
+      <h1>Showroom shine, <span>in your driveway.</span></h1>
+      <p>Mobile detailing and ceramic coating across Central Trinidad. We bring the water, the power and the patience.</p>
+      <div class="ctas"><a href="#book" class="btn btn-lime">Book a detail</a><a href="#packages" class="btn btn-line">See packages</a></div>
+    </div>
+  </section>
+
+  <section class="ba" id="results">
+    <div class="ba-head"><h2>Same car. Three hours later.</h2></div>
+    <div class="ba-stage">
+      <img class="ba-before" src="img/sedan.jpg" alt="A black sedan before detailing, dull and dusty" width="1800" height="1125" loading="lazy">
+      <div class="ba-dust" aria-hidden="true"></div>
+      <div class="ba-after"><img src="img/sedan.jpg" alt="The same sedan after detailing, deep gloss and clean reflections" width="1800" height="1125" loading="lazy"><div class="ba-sheen" aria-hidden="true"></div></div>
+      <div class="ba-line" aria-hidden="true"><span><i class="ph-bold ph-arrows-left-right"></i></span></div>
+      <p class="ba-tag ba-tag-l">Before</p><p class="ba-tag ba-tag-r">After</p>
+    </div>
+  </section>
+
+  <section class="process" id="process">
+    <h2>Four passes. No shortcuts.</h2>
+    <div class="proc">
+      <svg class="proc-line" viewBox="0 0 4 100" preserveAspectRatio="none" aria-hidden="true"><line x1="2" y1="0" x2="2" y2="100" class="track"/><line x1="2" y1="0" x2="2" y2="100" class="fill"/></svg>
+      <article class="pstep"><img src="img/foam.jpg" alt="Thick snow foam being sprayed over a black sports car" loading="lazy"><div><h3>Foam bath</h3><p>pH-neutral snow foam lifts grit off the paint before anything touches it.</p></div></article>
+      <article class="pstep"><img src="img/wheel.jpg" alt="Gloved hand brushing a tyre sidewall" loading="lazy"><div><h3>Wheels and arches</h3><p>Iron remover, soft brushes and tyre dressing that isn't greasy.</p></div></article>
+      <article class="pstep"><img src="img/wax.jpg" alt="Detailer polishing the glossy panel of a black car" loading="lazy"><div><h3>Paint correction</h3><p>Machine polishing takes out swirls and haze, panel by panel.</p></div></article>
+      <article class="pstep"><img src="img/interior.jpg" alt="Clean black leather seats and dashboard of a luxury car" loading="lazy"><div><h3>Interior and seal</h3><p>Steam, leather conditioner, then a coating to lock the shine in.</p></div></article>
+    </div>
+  </section>
+
+  <section class="packages" id="packages">
+    <h2>Pick your finish</h2>
+    <div class="stack">
+      <article class="pkg"><div class="pkg-copy"><h3>Refresh</h3><p class="price">TT$450</p><ul><li>Foam wash and hand dry</li><li>Wheels and tyres</li><li>Interior vacuum and wipe-down</li></ul><span class="time">About 2 hours</span></div><img src="img/foam2.jpg" alt="An SUV covered in foam inside a detailing bay" loading="lazy"></article>
+      <article class="pkg"><div class="pkg-copy"><h3>Deep detail</h3><p class="price">TT$950</p><ul><li>Everything in Refresh</li><li>Clay bar and one-step polish</li><li>Steam-cleaned interior</li></ul><span class="time">About 5 hours</span></div><img src="img/headlight.jpg" alt="Close-up of a polished car headlight with glowing rings" loading="lazy"></article>
+      <article class="pkg"><div class="pkg-copy"><h3>Ceramic, 2 years</h3><p class="price">TT$3,800</p><ul><li>Full paint correction</li><li>Two-layer ceramic coating</li><li>Free check-up wash at 6 months</li></ul><span class="time">Two visits</span></div><img src="img/hero.jpg" alt="A sports car silhouette catching a single line of light" loading="lazy"></article>
+    </div>
+  </section>
+
+  <section class="book" id="book">
+    <form class="quote" novalidate>
+      <h2>Build your quote</h2>
+      <fieldset><legend>Vehicle</legend>
+        <div class="seg">
+          <label><input type="radio" name="size" value="1" checked><span>Car</span></label>
+          <label><input type="radio" name="size" value="1.2"><span>SUV</span></label>
+          <label><input type="radio" name="size" value="1.35"><span>Pickup</span></label>
+        </div>
+      </fieldset>
+      <fieldset><legend>Package</legend>
+        <div class="seg">
+          <label><input type="radio" name="pkg" value="450" checked><span>Refresh</span></label>
+          <label><input type="radio" name="pkg" value="950"><span>Deep detail</span></label>
+          <label><input type="radio" name="pkg" value="3800"><span>Ceramic</span></label>
+        </div>
+      </fieldset>
+      <fieldset><legend>Add-ons</legend>
+        <div class="adds">
+          <label><input type="checkbox" name="add" value="150"><span>Headlight restore<b>+150</b></span></label>
+          <label><input type="checkbox" name="add" value="200"><span>Engine bay<b>+200</b></span></label>
+          <label><input type="checkbox" name="add" value="120"><span>Pet hair removal<b>+120</b></span></label>
+        </div>
+      </fieldset>
+      <div class="two">
+        <label>Name<input name="name" autocomplete="name"></label>
+        <label>WhatsApp<input name="phone" type="tel" inputmode="tel" placeholder="868 000 0000"></label>
+      </div>
+      <div class="two">
+        <label>Area<select name="area"><option>Chaguanas</option><option>Couva</option><option>Cunupia</option><option>Freeport</option><option>Other</option></select></label>
+        <label>Preferred day<input name="date" type="date"></label>
+      </div>
+      <div class="total"><span>Estimate</span><output name="total">TT$450</output></div>
+      <p class="err" role="alert" hidden>Add your name and a WhatsApp number so we can confirm.</p>
+      <button class="btn btn-lime btn-wide" type="submit">Book a detail</button>
+      <div class="done" hidden><i class="ph-bold ph-check-square"></i><h3>Slot requested</h3><p>On a live site this goes straight to the detailer's WhatsApp with your quote attached.</p></div>
+    </form>
+    <aside class="book-side">
+      <img src="img/wax.jpg" alt="" loading="lazy">
+      <p>We come to your home or office. All we need is a parking spot.</p>
+    </aside>
+  </section>
+</main>
+
+<footer class="foot"><p><b>Gloss Lab</b> is a fictional business. Concept site designed and built by Portside Digital. Photos from Unsplash.</p></footer>
+
+<a class="pd-ribbon" href="https://wa.me/18682591409?text=Hi%20Portside%20Digital%2C%20I%20saw%20the%20Gloss%20Lab%20demo%20and%20want%20a%20site%20like%20it." target="_blank" rel="noopener">Concept site by <b>Portside Digital</b>. Want one like this?</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

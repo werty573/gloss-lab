@@ -55,12 +55,13 @@ if (!reduce && window.gsap) {
   gsap.set('.ba-after', { x: 0, xPercent: 100 });
   gsap.set('.ba-after-in', { x: 0, xPercent: -100 });
   gsap.set('.ba-line', { left: 0 });
-  gsap.timeline({ scrollTrigger: { trigger: '.ba', start: 'top top', end: '+=140%', pin: true, scrub: .6, invalidateOnRefresh: true } })
-    .to('.ba-after', { xPercent: 0, ease: 'none' })
-    .to('.ba-after-in', { xPercent: 0, ease: 'none' }, 0)
-    .fromTo('.ba-line', { x: () => stage.clientWidth - 2 }, { x: 0, ease: 'none' }, 0)
-    .to('.ba-sheen', { xPercent: 60, ease: 'none' }, 0)
-    .to('.ba-line', { opacity: 0, duration: .08 }, .92);
+  // every tween spans the full timeline, so the pin releases the moment the wipe completes
+  gsap.timeline({ defaults: { ease: 'none', duration: 1 }, scrollTrigger: { trigger: '.ba', start: 'top top', end: '+=110%', pin: true, scrub: .6, invalidateOnRefresh: true } })
+    .to('.ba-after', { xPercent: 0 }, 0)
+    .to('.ba-after-in', { xPercent: 0 }, 0)
+    .fromTo('.ba-line', { x: () => stage.clientWidth - 2 }, { x: 0 }, 0)
+    .to('.ba-sheen', { xPercent: 60 }, 0)
+    .to('.ba-line', { opacity: 0, duration: .06 }, .94);
 
   // process: the lime line draws down as each step comes in
   gsap.to('.proc-line .fill', { strokeDashoffset: 0, ease: 'none', scrollTrigger: { trigger: '.proc', start: 'top 60%', end: 'bottom 60%', scrub: true } });
